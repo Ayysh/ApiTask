@@ -19,6 +19,19 @@ Condition: Enable caching.
 
 General Conditions: Perform validation, exception handling, unit testing for all methods, integration testing for api methods.
 
+## Technologies used
+
+SpringBoot 2.1.6.RELEASE
+JPA    
+H2 embedded database 
+Maven   
+TestNG 
+Mockito
+RestAssured
+Lombok
+
+
+
 ## Getting started
 
 A quick introduction of the minimal setup you need to get `stackoverflow` up & running.
