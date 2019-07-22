@@ -21,15 +21,21 @@ General Conditions: Perform validation, exception handling, unit testing for all
 
 ## Technologies used
 
-SpringBoot 2.1.6.RELEASE
-JPA    
-H2 embedded database 
-Maven   
-TestNG 
-Mockito
-RestAssured
-Lombok
+1. SpringBoot 2.1.6.RELEASE
 
+2. JPA    
+
+3. H2 embedded database 
+
+4. Maven   
+
+5. TestNG 
+
+6. Mockito
+
+7. RestAssured
+
+8. Lombok
 
 
 ## Getting started
