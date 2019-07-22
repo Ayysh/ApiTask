@@ -1,0 +1,31 @@
+{
+  "items": [
+    {
+      "badge_counts": {
+        "bronze": 44,
+        "silver": 18,
+        "gold": 3
+      },
+      "account_id": 452207,
+      "is_employee": false,
+      "last_modified_date": 1562401808,
+      "last_access_date": 1563476845,
+      "reputation_change_year": -70,
+      "reputation_change_quarter": -40,
+      "reputation_change_month": -40,
+      "reputation_change_week": -50,
+      "reputation_change_day": 0,
+      "reputation": 124,
+      "creation_date": 1310893287,
+      "user_type": "registered",
+      "user_id": 848513,
+      "accept_rate": 81,
+      "link": "https://stackoverflow.com/users/848513/kneidels",
+      "profile_image": "https://www.gravatar.com/avatar/f70f270881220638aa7acf8c56cd5560?s=128&d=identicon&r=PG",
+      "display_name": "kneidels"
+    }
+  ],
+  "has_more": false,
+  "quota_max": 10000,
+  "quota_remaining": 9999
+}

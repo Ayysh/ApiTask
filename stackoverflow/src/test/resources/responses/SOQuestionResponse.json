@@ -1,0 +1,34 @@
+{
+  "items": [
+    {
+      "tags": [
+        "python",
+        "pandas",
+        "numpy"
+      ],
+      "owner": {
+        "reputation": 15107,
+        "user_id": 172677,
+        "user_type": "registered",
+        "accept_rate": 83,
+        "profile_image": "https://i.stack.imgur.com/lgANn.jpg?s=128&g=1",
+        "display_name": "Eastsun",
+        "link": "https://stackoverflow.com/users/172677/eastsun"
+      },
+      "is_answered": false,
+      "view_count": 67,
+      "bounty_amount": 100,
+      "bounty_closes_date": 1564201520,
+      "answer_count": 0,
+      "score": 0,
+      "last_activity_date": 1563596720,
+      "creation_date": 1563422409,
+      "question_id": 57086935,
+      "link": "https://stackoverflow.com/questions/57086935/is-there-any-elegant-way-to-define-a-dataframe-with-column-of-dtype-array",
+      "title": "Is there any elegant way to define a dataframe with column of dtype array?"
+    }
+  ],
+  "has_more": true,
+  "quota_max": 10000,
+  "quota_remaining": 9999
+}
