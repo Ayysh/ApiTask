@@ -31,11 +31,13 @@ Lombok- for ease of using getters and setters
 ### Building & Running
 ### Clean and build the project.
  mvn package
+ 
  This creates a jar file of project in stackoverflow/target/stackoverflow-0.0.1-SNAPSHOT.jar
 
 ## Run the application.
  mvn spring-boot:run
-Project runs on http://localhost:9090/swagger-ui.html. If incase you get port already in use then change the port in
+ 
+Project shall run on http://localhost:9090/swagger-ui.html. If incase you get port already in use then change the port in
 application properties and then use.
 
 ## Running all tests (unit and integration test)
