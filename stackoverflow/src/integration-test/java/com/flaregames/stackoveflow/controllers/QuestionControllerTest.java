@@ -40,6 +40,9 @@ public class QuestionControllerTest extends IntegrationTestBase {
     @BeforeMethod
     public void setUp() throws IOException {
 
+/*
+Instead of initializing data from StackOverflow, we just initialize the db with data mentioned here
+ */
         List<Question> questions = new ArrayList<>();
 
         Set<Tag> tag = new HashSet<>();
@@ -50,7 +53,6 @@ public class QuestionControllerTest extends IntegrationTestBase {
 
         questionDao.save(questions);
     }
-
 
     @Test
     public void getAllQuestions() {
@@ -67,7 +69,7 @@ public class QuestionControllerTest extends IntegrationTestBase {
     @Test
     public void retrieveQuestion() {
 
-        Response response = given().port(RestAssured.port).contentType(ContentType.JSON).when().get("/stackoverflow/questions/" +  "57086935");
+        Response response = given().port(RestAssured.port).contentType(ContentType.JSON).when().get("/stackoverflow/questions/" + "57086935");
 
         response.then().log().ifError();
 
@@ -78,15 +80,15 @@ public class QuestionControllerTest extends IntegrationTestBase {
         // Assert the response
         response.then()
                 .content("question_id", Matchers.is(57086935))
-                .content("user_id",Matchers.is(172677))
-                .content("is_answered",Matchers.is(false))
-                .content("view_count",Matchers.is(20))
+                .content("user_id", Matchers.is(172677))
+                .content("is_answered", Matchers.is(false))
+                .content("view_count", Matchers.is(20))
                 .statusCode(200);
     }
 
     @Test
     public void deleteQuestion() {
-        Response response = given().port(RestAssured.port).contentType(ContentType.JSON).when().delete("/stackoverflow/questions/" +  "57086935");
+        Response response = given().port(RestAssured.port).contentType(ContentType.JSON).when().delete("/stackoverflow/questions/" + "57086935");
 
         response.then().log().ifError();
 
@@ -109,9 +111,9 @@ public class QuestionControllerTest extends IntegrationTestBase {
         // Assert the response
         response.then()
                 .content("[0].question_id", Matchers.is(57086935))
-                .content("[0].user_id",Matchers.is(172677))
-                .content("[0].is_answered",Matchers.is(false))
-                .content("[0].view_count",Matchers.is(20))
+                .content("[0].user_id", Matchers.is(172677))
+                .content("[0].is_answered", Matchers.is(false))
+                .content("[0].view_count", Matchers.is(20))
                 .statusCode(200);
     }
 

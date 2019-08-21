@@ -20,7 +20,6 @@ import java.util.List;
 @AllArgsConstructor
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class QuestionListResponse {
-
     @JsonProperty("list")
     private List<QuestionResponse> questionResponseList = new ArrayList<>();
 

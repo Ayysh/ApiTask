@@ -2,10 +2,8 @@ package com.flaregames.stackoverflow.response.internal;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 
 import java.util.List;
 
@@ -15,8 +13,6 @@ import java.util.List;
  */
 @Builder
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class QuestionResponse {
 
@@ -40,6 +36,19 @@ public class QuestionResponse {
 
     @JsonProperty("user_id")
     private int userId;
+
+    public QuestionResponse() {
+    }
+
+    public QuestionResponse(Integer id, List<String> tags, boolean isAnswered, int viewCount, int answerCount, String createDate, int userId) {
+        this.id = id;
+        this.tags = tags;
+        this.isAnswered = isAnswered;
+        this.viewCount = viewCount;
+        this.answerCount = answerCount;
+        this.createDate = createDate;
+        this.userId = userId;
+    }
 
     public Integer getId() {
         return id;

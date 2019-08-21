@@ -17,7 +17,7 @@ public class Constants {
     public static final String GET_QUESTION_TAG_RESOURCE_URL = "/questions/tag";
     public static final String STACK_OVERFLOW_BASE_URL = "/stackoverflow";
     public static final String REMOTE_STACK_OVERFLOW_BASE_URL = "http://api.stackexchange.com";
-    public static final String REMOTE_STACK_OVERFLOW_USER_URL = REMOTE_STACK_OVERFLOW_BASE_URL + "/2.2/users/%s?key=U4DMV*8nvpm3EOpvf69Rxw((&site=stackoverflow&order=desc&sort=reputation&filter=default";
+    public static final String REMOTE_STACK_OVERFLOW_USER_URL = REMOTE_STACK_OVERFLOW_BASE_URL + "/2.2/users/%s?&site=stackoverflow&order=desc&sort=reputation&filter=default";
 
-    public static final String REMOTE_STACK_OVERFLOW_QUESTION_URL = REMOTE_STACK_OVERFLOW_BASE_URL + "/2.2/questions/featured?key=U4DMV*8nvpm3EOpvf69Rxw((&site=stackoverflow&order=desc&sort=creation&filter=default&pagesize=20";
+    public static final String REMOTE_STACK_OVERFLOW_QUESTION_URL = REMOTE_STACK_OVERFLOW_BASE_URL + "/2.2/questions/featured?&site=stackoverflow&order=desc&sort=creation&filter=default&pagesize=20";
 }

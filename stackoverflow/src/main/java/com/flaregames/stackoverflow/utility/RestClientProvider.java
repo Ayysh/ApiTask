@@ -10,8 +10,7 @@ import org.springframework.web.client.RestTemplate;
  * This class provides RestClient for making RestApi calls
  */
 @Component
-public final class RestClientProvider {
-
+public class RestClientProvider {
 
     /**
      * RestClient

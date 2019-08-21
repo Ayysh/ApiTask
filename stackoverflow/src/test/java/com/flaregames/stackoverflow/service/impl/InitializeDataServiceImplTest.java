@@ -55,7 +55,7 @@ public class InitializeDataServiceImplTest {
         //Actual Call
         initalizeDataService.initializeDB();
 
-        //Verify
+        //Verify if a certain method of a mock object has been called by specific number of times
         Mockito.verify(questionMapperMock).toQuestionList(SOQuestionResponseWrapper);
         Mockito.verify(questionDaoMock).save(questionList);
         Mockito.verify(restClientProviderMock).getClient();

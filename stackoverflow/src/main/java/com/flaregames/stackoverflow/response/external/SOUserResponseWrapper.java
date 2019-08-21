@@ -27,4 +27,11 @@ public class SOUserResponseWrapper {
     @JsonProperty("items")
     private List<UserResponse> userResponses = new ArrayList<>();
 
+    public List<UserResponse> getUserResponses() {
+        return userResponses;
+    }
+
+    public void setUserResponses(List<UserResponse> userResponses) {
+        this.userResponses = userResponses;
+    }
 }

@@ -36,7 +36,7 @@ public class InitializeDataServiceImpl implements InitalizeDataService {
     // used to execute the method when the spring starts
     @PostConstruct
     public void initializeDB() {
-
+        //RestTemplate is used to make HTTP Rest Calls (REST Client)
         RestTemplate restTemplate = restClientProvider.getClient();
 
         SOQuestionResponseWrapper SOQuestionResponseWrapper = restTemplate.getForObject(REMOTE_STACK_OVERFLOW_QUESTION_URL, SOQuestionResponseWrapper.class);

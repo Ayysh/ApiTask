@@ -33,8 +33,6 @@ public class UserProxyControllerTest extends IntegrationTestBase {
                 .content("user_id", Matchers.is(848513))
                 .content("creation_date", Matchers.is("2011-07-17T11:01:27"))
                 .statusCode(200);
-
     }
-
 }
 
